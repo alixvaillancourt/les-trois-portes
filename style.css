@@ -1,0 +1,16 @@
+body{
+    background: grey;
+}
+
+p{
+    color: crimson;
+}
+
+#porte4{
+    position: absolute;
+    height: 900px;
+    width: 900px;
+    left:250px;
+    top: 0px;
+    display: none;
+}

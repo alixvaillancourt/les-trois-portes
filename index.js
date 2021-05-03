@@ -16,18 +16,22 @@ const porte3 = document.getElementById("porte3").addEventListener("click", funct
     console.log("p3");
     verif();
 });
+const porte4 = document.getElementById("porte4");
+porte4.addEventListener("click", function () {
+    porte4.style.display = "none";
+    alert("perdu, ton score est de: " + score);
+    score = 0;
+    document.getElementById("score").innerHTML = "score = " + score;
+});
+const p1 = document.getElementById("p1");
 
 function verif() {
     quelPorte();
     if(cP === quelPorte()){
-        alert("perdu, ton score est de: " + score);
-        score = 0;
-        document.getElementById("score").innerHTML = "score = " + score;
+        porte4.style.display = "block";
     }else{
         score++;
-        alert("bonne porte!");
         document.getElementById("score").innerHTML = "score = " + score;
-        
     }
 }
 
