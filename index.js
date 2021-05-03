@@ -1,4 +1,5 @@
 let cP;
+let score = 0;
 
 const porte1 = document.getElementById("porte1").addEventListener("click", function(){
     cP = 0;
@@ -19,9 +20,14 @@ const porte3 = document.getElementById("porte3").addEventListener("click", funct
 function verif() {
     quelPorte();
     if(cP === quelPorte()){
-        alert("perdu");
+        alert("perdu, ton score est de: " + score);
+        score = 0;
+        document.getElementById("score").innerHTML = "score = " + score;
     }else{
-        alert("gagne");
+        score++;
+        alert("bonne porte!");
+        document.getElementById("score").innerHTML = "score = " + score;
+        
     }
 }
 
