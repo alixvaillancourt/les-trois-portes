@@ -41,6 +41,7 @@ porte4.addEventListener("click", function () {
     }
 
 });
+
 const porte5 = document.getElementById("porte5");
 porte5.addEventListener("click", function (params) {
     alert("Il n'y a pas de fantome ici. Tu peux continuer ton chemin...")
