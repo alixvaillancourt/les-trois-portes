@@ -71,6 +71,27 @@ function verif() {
 }
 
 function quelPorte() {
-    var qP = Math.floor(Math.random() * 3);
-    return qP;
+    var portePvAct;
+    var porteBpAct;
+    var qP = Math.floor(Math.random() * 3 ) + 1;
+    var verifPPv = Math.floor(Math.random() * 10) + 1;
+    if(verifPPv <= 2) {
+        portePvAct = true;
+    }else{
+        portePvAct = false;
+    }
+
+    var verifPBp = Math.floor(Math.random() * 10) + 1;
+    if (verifPBp <= 2) {
+        porteBpAct = true;
+    }else{
+        porteBpAct = false;
+    }
+
+    var derChaquePortes = [];
+    if (portePvAct == true) {
+        var posPPv = Math.floor(Math.random() * 3) + 1;
+        
+    }
+    
 }
